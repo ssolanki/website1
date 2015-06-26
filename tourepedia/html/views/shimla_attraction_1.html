@@ -1,0 +1,67 @@
+<style>
+    .preplanned-attraction-container .banner-container{height: 500px; background: silver; width: 100%;}
+    .preplanned-attraction-container .banner-container .image-container{width: 100%; height: 100%; position: relative; box-sizing: border-box}
+    .preplanned-attraction-container .banner-container .image-container .description{position: absolute; bottom: 0;left: 0;height: 50px; width: 100%; line-height: 50px;padding: 5px 0; background: rgba(0,0,0,.5);}
+    .preplanned-attraction-container .banner-container .image-container .description p{color: #ffffff; padding: 0 20px; font-family: 'Droid Serif', serif; font-weight: bold;}
+    .preplanned-attraction-container .place-info-container{background: #ffffcc; padding: 20px 0; margin: 0 auto;}
+    .preplanned-attraction-container .menu-container{box-sizing: border-box;}
+    .preplanned-attraction-container .menu-container ul{list-style: none;}
+    .preplanned-attraction-container .menu-container ul li{height: 70px; line-height: 70px; text-align: center; font-size: 25px; background: #21a1e1; cursor: pointer; transition: all linear .15s;}
+    .preplanned-attraction-container .menu-container ul li.active{background: rgb(44, 62, 80); color: white;}
+    .preplanned-attraction-container .menu-item-values{box-sizing: border-box;}
+</style>
+<div class="preplanned-attraction-container container">
+    <div class="banner-container">
+        <div class="image-container">
+            image here
+            <div class="description">
+                <p>Name of The place</p>
+            </div>
+        </div>
+    </div>
+    <div class="row place-info-container" ng-init="item = 1" >
+        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 menu-container">
+            <ul>
+                <li data-ng-click="item = 1" data-ng-class="{'active':item==1}">About</li>
+                <li data-ng-click="item = 2" data-ng-class="{'active':item==2}">Travel</li>
+                <li data-ng-click="item = 3" data-ng-class="{'active':item==3}">Review</li>
+                <li data-ng-click="item = 4" data-ng-class="{'active':item==4}">SomeMore</li>
+                <li data-ng-click="item = 5" data-ng-class="{'active':item==5}">OneMore</li>
+            </ul>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-9 col-xs-9 menu-item-values">
+            <div class="about" data-ng-show="item == 1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet
+                consequatur dicta dignissimos, dolor ea et fugit harum incidunt, odio porro quae quis
+                voluptatum. Ad aperiam architecto aspernatur at cupiditate dicta dignissimos eius
+                eum exercitationem expedita facilis magni, modi optio placeat saepe sunt tempora totam, ut veniam voluptatibus. Corporis, quis?
+            </div>
+            <div class="travel" data-ng-show="item == 2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet
+                consequatur dicta dignissimos, dolor ea et fugit harum incidunt, odio porro quae quis
+                voluptatum. Ad aperiam architecto aspernatur at cupiditate dicta dignissimos eius
+                eum exercitationem expedita facilis magni, modi optio placeat saepe sunt tempora totam, ut veniam voluptatibus. Corporis, quis?
+            </div>
+            <div class="review" data-ng-show="item == 3">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos ex illo maiores
+                neque provident, quae! Adipisci alias doloremque error et, fuga id, incidunt minus molestias nesciunt
+                nostrum obcaecati omnis recusandae reiciendis repellat saepe sapiente sint soluta? Architecto
+                cupiditate exercitationem placeat praesentium reprehenderit saepe sed similique voluptatum. Dolorem,
+                ea itaque sapiente soluta ullam veritatis? Accusantium aliquam amet, cum cupiditate dicta enim incidunt
+                iusto molestiae nemo nostrum obcaecati quam quia recusandae sapiente suscipit vitae voluptas voluptatibus!
+                Ad culpa exercitationem iste itaque necessitatibus non qui, repudiandae
+                tenetur? Accusamus consequatur dolore est impedit in iste laborum, molestias odit perferendis placeat, ratione repudiandae vero.
+            </div>
+            <div class="someMore" data-ng-show="item == 4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquid consectetur doloribus fugiat quae sit. Consectetur ea iure quae recusandae voluptatum!
+            </div>
+            <div class="oneMore" data-ng-show="item == 5" >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam aut deleniti
+                dolores, doloribus eius eos eveniet ex explicabo quae, quasi ratione reprehenderit soluta tempora velit. Ad aperiam consequuntur corporis ex
+                ipsam iusto maxime non omnis. Alias animi architecto dicta ea, fuga id inventore itaque magni molestiae nam veniam veritatis.
+            </div>
+        </div>
+    </div>
+</div>

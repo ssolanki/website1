@@ -1,0 +1,28 @@
+<div class="select-destination" data-ng-controller="PlaceInfoController">
+    <div class="place-info" >
+        <div class="place-info-container">
+            <div class="center-info-content">
+                <div class="top-stand"></div>
+                <div class="info">
+                    <div class="image"> {{selectedPlaceInfo.image}} </div>
+                    <div class="content">
+                        <div class="place-name">{{selectedPlaceInfo.name}}</div>
+                        <p>{{selectedPlaceInfo.info}}
+                        </p>
+                    </div>
+                    <div class="proceed-button" data-ng-click="processToAddAttraction()">
+                        <a ui-sref="planATrip">Proceed to Plan</a>
+                    </div>
+                </div>
+                <div class="bottom-stand">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* this style is used because at this moment we have removed that go down menu*/
+    .place-info .center-info-content {
+        padding-bottom: 0;
+    }
+</style>

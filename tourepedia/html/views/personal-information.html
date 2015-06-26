@@ -1,0 +1,94 @@
+<div class="personal-information">
+   <div class="personal-information-container" data-ng-init="planning = true">
+      <ul class="plan-book-menu">
+         <li data-ng-class="{'active': planning}" data-ng-click="planning = true">Plan</li>
+         <li data-ng-class="{'active' : !planning}" data-ng-click="planning = false">Book &amp; get plan FREE</li>
+      </ul>
+      <div class="information-form plan" data-ng-show="planning">
+         <form name="planForm" novalidate>
+            <div class="input-group">
+               <label for="fullName1">Full Name*</label>
+               <div class="inputs">
+                  <input type="text" name="fullName" id="fullName1" required ng-model="user.fullName"/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="email1">Email*</label>
+               <div class="inputs">
+                  <input type="email" ng-model="user.email" name="email1" id="email1" required/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="mobileNumber1">Mobile*</label>
+               <div class="inputs">
+                  <input type="number" ng-model="user.mobileNumber" name="mobileNumber1" id="mobileNumber1" required/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="address1">Address*</label>
+               <div class="inputs">
+                  <input type="text" ng-model="user.address.line1" id="address1" name="address1" required/>
+                  <input type="text" ng-model="user.address.line2"/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="netAmount1">Net Amount**</label>
+               <div class="inputs">
+                  <input type="text" ng-model="user.netAmount" id="netAmount1" name="netAmount1" required/>
+                  <span>view plan costs</span>
+               </div>
+            </div>
+            <div class="button-group">
+               <button onclick="LaunchDialog('login-dialog')">REGISTERED USER</button>
+               <button data-ng-class="{'valid-form': planForm.$valid}" ui-sref="planATrip.proceed({'planningStage':'plan-signup'})">PROCEED AS GUEST USER</button>
+            </div>
+         </form>
+         <div class="some-info">
+            <p>* Indicates fields mandatory to fill.</p>
+            <p>** Assured Money Back guarantee if detailed plan of the trip
+               is not provided within 3 hours after confirmation of payment from the bank.</p>
+         </div>
+      </div>
+      <div class="information-form book-plan" data-ng-show="!planning">
+         <form name="planBookForm">
+            <div class="input-group">
+               <label for="fullName2">Full Name*</label>
+               <div class="inputs">
+                  <input type="text" name="user.fullName" id="fullName2"/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="email2">Email*</label>
+               <div class="inputs">
+                  <input type="email" name="user.email" id="email2"/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="mobileNumber2">Mobile*</label>
+               <div class="inputs">
+                  <input type="number" name="user.mobileNumber" id="mobileNumber2"/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="address2">Address*</label>
+               <div class="inputs">
+                  <input type="text" name="user.address.line1" id="address2"/>
+                  <input type="text" name="user.address.line2"/>
+               </div>
+            </div>
+            <div class="input-group">
+               <label for="head">Head 1</label>
+               <div class="inputs">
+                  <input type="text" name="user.head1.line1" id="head"/>
+                  <input type="text" name="user.head1.line2" />
+                  <input type="text" name="user.head1.line3" />
+               </div>
+            </div>
+            <div class="button-group">
+               <button onclick="LaunchDialog('login-dialog')">REGISTERED USER</button>
+               <button ui-sref="planATrip.proceed({'planningStage':'plan-signup'})">PROCEED AS GUEST USER</button>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
