@@ -32,13 +32,30 @@ app.controller('SignUpController', ['$scope', 'SignUpService',
         }
     }]);
 
-app.controller('LoginController', ['$scope', 'LoginService', '$rootScope',
-    function ($scope, LoginService, $rootScope) {
+app.controller('LoginController', ['$scope', 'LoginService', '$rootScope',"$http",
+    function ($scope, LoginService, $rootScope,$http) {
         $scope.login = function (user) {
             if (!$rootScope.isLoggedIn) {
                 LoginService.login(user, $scope);
                 $scope.user = "";
             }
+
+        };
+        $scope.CheckCredentials = function(){
+                var data = {
+                     email : $scope.user.email,
+                     pwd: $scope.user.password
+                     
+                };
+
+    $http.post('api/slim.php/auth/process',data).then(function (resp) {
+     
+        console.log(resp.data);
+    });
+     
+
+
+
         };
 
     }]);

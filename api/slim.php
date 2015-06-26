@@ -12,8 +12,52 @@ require 'Slim/Slim.php';
 
 $app = new \Slim\Slim();
 
+/**********************************  USER LOGIN SIGNUP CHECKING ******************************/
+
+$authenticate = function ($app) {
+    return function () use ($app) {
+        if (!isset($_SESSION['user'])) {
+            $app->redirect('/login.html');
+        }
+    };
+};
+
  
-/*************************************    Products data retrivel  **********************************/
+session_start(); 
+$app->post("/auth/process", function () use ($app, $db) {
+ 
+    $array = (array) json_decode($app->request()->getBody());
+
+    $email = $array['email'];
+    $pwd = md5($array['pwd']);
+    $user = $db->users()->where('user_email', $email)->where('user_password',$pwd);
+
+    $count = count($user);
+         
+    if($count == 1){     
+     $_SESSION['user'] = $email;
+     $data = array( "loginstatus" => "success",
+                        'user' => $email
+                    );    
+    }
+        else{
+
+            $data[] = array( "loginstatus" => "login failure"
+                       
+                    ); 
+             
+        }
+      
+   $app->response()->header('Content-Type', 'application/json');
+   echo json_encode($data);
+   
+});
+
+$app->get("/auth/logout", function () use ($app) {
+   unset($_SESSION['user']);  
+});
+
+  
 //Get Method to get the data from database
 
 $app->get('/region/places(/:region_id)', function($region_id=null) use ($app, $db){
