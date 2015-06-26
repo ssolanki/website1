@@ -53,6 +53,41 @@ $app->post("/auth/process", function () use ($app, $db) {
    
 });
 
+$app->post("/register", function () use ($app, $db) {
+    $data = array();
+    $array = (array) json_decode($app->request()->getBody());
+    $user = $db->users()->where('user_email', $array['email']);
+    $count = count($user);
+    
+    $email = $array['email'];
+    $pwd = md5($array['pwd']);
+    $firstname =  $array['firstname'];
+    $lastname =  $array['lastname'];     
+    // print_r($array);
+    if($count == 1){
+         $data[] = array( "registerStatus" => "already registered"
+          );
+    }         
+    else{
+              $p = array( 'user_email'=> $array['email'] ,
+                     'user_password'=> md5($array['pwd']) ,
+                      'user_firstname'=> $array['firstname'] ,
+                      'user_lastname'=>  $array['lastname']
+                     );
+          $user = $db->users()->insert($p);
+
+          $data[] = array( "registerStatus" => "successfully registered",
+                  'user_email' =>  $array['email']
+          ); 
+          $_SESSION['user'] = $email;
+    }
+      
+   $app->response()->header('Content-Type', 'application/json');
+   echo json_encode($data);
+   
+});
+
+
 $app->get("/auth/logout", function () use ($app) {
    unset($_SESSION['user']);  
 });

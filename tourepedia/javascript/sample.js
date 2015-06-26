@@ -2,20 +2,43 @@
  * Created by Sudhir on 17-Jun-15.
  */
 
-app.controller("MenuLocationPlacesController", ["$scope", "PlacesService", "$rootScope",
-    function (scope, placeService, rootScope) {
+app.controller("MenuLocationPlacesController", ["$scope", "PlacesService", "$rootScope",'$http',
+    function (scope, placeService, rootScope, $http) {
         scope.places = [];
         placeService.placeInfo(scope);
-        scope.updatePlaceInfo = function (place) {
-            rootScope.selectedPlaceInfo = place;
+        scope.updatePlaceInfo = function (place_id) {
+            // rootScope.selectedPlaceInfo = place;
+            $http.get('api/slim.php/places/'+place_id).then(function(resp) {
+            console.log(resp);
+            rootScope.selectedPlaceInfo = (resp.data.places_data[0]); 
+
+            //console.log(rootScope.selectedPlaceInfo);         
+
+        });
             rootScope.showPorgressBar = false;
         }
+
+        $http.get('api/slim.php/region/places/1').then(function(resp) {
+            
+            scope.north_places_data = (resp.data.places_data); 
+            // console.log(scope.places_data);         
+
+        });
+        $http.get('api/slim.php/region/places/2').then(function(resp) {            
+            scope.northeast_places_data = (resp.data.places_data); 
+            // console.log(scope.places_data);         
+        });
+        $http.get('api/slim.php/region/places/3').then(function(resp) {           
+            scope.west_places_data = (resp.data.places_data); 
+           
+        });
+
     }
 ]);
 
-app.controller('SignUpController', ['$scope', 'SignUpService','$http',
+app.controller('SignUpController', ['$scope', 'SignUpService',
 
-    function ($scope, SignUpService,$http) {
+    function ($scope, SignUpService) {
 
         $scope.newUser = {};
         $scope.everyThingAlright = function(newValue){
@@ -27,78 +50,56 @@ app.controller('SignUpController', ['$scope', 'SignUpService','$http',
             return validName && validEmail && validPassword && validRePassword && passwordMatch;
         };
 
-        
-        $scope.registerUser = function(newUser){
-            if($scope.everyThingAlright(newUser)){
-                var data = {
-                     email : newUser.email,
-                     firstname : newUser.firstName,
-                     lastname : newUser.lastName,                    
-                     pwd: newUser.password                     
-                };
-
-                    $http.post('api/slim.php/register',data).then(function (resp) {
-                     
-                        console.log(resp.data);
-                    });
-     
-
-            }
-        }
-
         $scope.register = function (newUser) {
             SignUpService.registerMe(newUser);
         }
     }]);
 
-app.controller('LoginController', ['$scope', 'LoginService', '$rootScope',"$http",
-    function ($scope, LoginService, $rootScope,$http) {
+app.controller('LoginController', ['$scope', 'LoginService', '$rootScope',
+    function ($scope, LoginService, $rootScope) {
         $scope.login = function (user) {
             if (!$rootScope.isLoggedIn) {
                 LoginService.login(user, $scope);
                 $scope.user = "";
             }
-
-        };
-        $scope.CheckCredentials = function(){
-                var data = {
-                     email : $scope.user.email,
-                     pwd: $scope.user.password
-                     
-                };
-
-    $http.post('api/slim.php/auth/process',data).then(function (resp) {
-     
-        console.log(resp.data);
-    });
-     
-
-
-
         };
 
     }]);
 
 
-app.controller("PlaceInfoController", ['$scope', '$rootScope', '$location', 'SessionService', 'PlacesService',
-    function (scope, rootScope, location, SessionService, PlacesService) {
+app.controller("PlaceInfoController", ['$scope', '$rootScope', '$location', 'SessionService', 'PlacesService','$http',
+    function (scope, rootScope, location, SessionService, PlacesService,$http) {
         scope.isPlaceSelected = rootScope.selectedPlaceInfo == undefined;
         rootScope.$watch('selectedPlaceInfo', function (newValue) {
             scope.selectedPlaceInfo = newValue;
+            console.log(newValue);
             if (newValue != undefined) {
                 scope.isPlaceSelected = true;
-                SessionService.set('selectedPlaceName', newValue.name);
+                SessionService.set('selectedPlaceName', newValue);
+                 
+                if(newValue.id!=undefined){    
+                $http.get('api/slim.php/'+newValue.id + '/attractions').then(function(resp) {
+            
+                     console.log (resp.data.attractions); 
+                     //console.log(rootScope.attractions);         
+
+                });
+            }
+
             }
         });
 
         scope.processToAddAttraction = function () {
+
             SessionService.set('userProceedToAddAttraction', true);
         };
         // check for users refresh so that he cannot come to it before selecting any place
         if (!SessionService.hasKey('selectedPlaceName')) {
             location.path('/home');
         } else {
+            
             rootScope.selectedPlaceInfo = PlacesService.placeDataForPlace(SessionService.get('selectedPlaceName'));
+            
         }
     }]);
 
