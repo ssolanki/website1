@@ -1,0 +1,61 @@
+<!--this content is random, you can replace it with yours-->
+<div class="add-attractions">
+   <div class="add-attractions-container">
+      <div class="row">
+         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 attractions selected-attractions">
+            <div class="head" >
+               <p>Selected attractions</p>
+               <span data-ng-show="userAttractionsList.length == 0">Your attraction list is empty!</span>
+            </div>
+            <div class="attraction" data-ng-repeat="attraction in user.attractionsList" >
+               <div class="title">{{attraction.attraction_name}}</div>
+               <div class="remove-attraction" >
+                  <span data-ng-click="removeAttractionFromList(attraction)"><i class="fa fa-remove"></i> </span>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-6 row attractions ">
+            <div class="head" >
+               <p>Add attractions to your list</p>
+            </div>
+            <div class="col-lg-4 col-md-4  col-sm-6" data-ng-repeat="attraction in attractions">
+               <div class="attraction"  >
+                  <div class="title">{{attraction.attraction_name}}</div>
+                  <div class="image">
+                     <img data-ng-src="./tourepedia/images/attractions/{{selectedPlaceInfo.place_name}}/{{attraction.attraction_image}}" alt="image"/>
+                  </div>
+                  <div class="attraction-info">{{attraction.attraction_about}}</div>
+                  <div class="add-attraction" title="Add Attraction" >
+                     <span data-ng-click="addAttractionToList(attraction)">+</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="proceed-or-know">
+         <!--<p>Take the cursor over the place to know about ti and click to select it.</p>-->
+         <a ui-sref="planATrip.proceed({'planningStage':'personal-information'})"
+            data-ng-click="proceedToAddPersonalInformation(user.attractionsList)">
+            Proceed
+         </a>
+      </div>
+      <div class="other-options" data-ng-show="prePlannedAttractionForThisPlace.length != 0">
+         <p>OR</p>
+         <h2>Select From out existing plans</h2>
+         <div class="row existing-plans" >
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" data-ng-repeat="plans in prePlannedAttractionForThisPlace">
+               <div class="existing-plan" ui-sref="planATrip.prePlansInfo({'prePlan':plans.fileId})">
+                  <div class="days">{{plans.attractionDays}} Days</div>
+                  <div class="plan-info">{{plans.attractionInfo}}</div>
+                  <div class="rupees"><i class="fa fa-inr"></i> &nbsp; {{plans.attractionBudget}}/-</div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<style>
+
+</style>

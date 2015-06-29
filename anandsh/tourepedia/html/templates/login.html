@@ -1,0 +1,65 @@
+<div class="dialog-box sm" id="login-dialog" data-ng-controller="LoginController">
+	<div class="dialog-box-container">
+		<div class="fake-box-body">
+			<div class="fake-close-button"></div>
+		</div>
+		<div class="dialog-box-body">
+			<!-- place your code here -->
+<!-- //////////////////////////////////////////////////// -->
+
+			<div class="login-container">
+				<form name="loginForm">
+					<div class="input-group label-animation">
+						<input type="email" name="email" id="email"
+							ng-model="user.email"
+							onfocus="MoveMyLabel(['email', 'emailLabel'])"
+							onblur="ResetLabel(['email', 'emailLabel'])"
+							ng-class="{'required-error': loginForm.email.$dirty && loginForm.email.$error.required}"
+							required
+						>
+						<label id="emailLabel" for="email">Email</label>
+					</div>
+					<div class="input-group label-animation">
+						<input type="password" name="password" id="password" 
+							ng-model="user.password" 
+							onfocus="MoveMyLabel(['password', 'passwordLabel'])"
+							onblur="ResetLabel(['password', 'passwordLabel'])"
+							ng-class="{'required-error': loginForm.password.$dirty && loginForm.password.$error.required}"
+							required
+						>
+						<label id="passwordLabel" for="password">Password</label>
+					</div>
+					<div class="input-group">
+						<i class="fa fa-spinner fa-spin fa-lg" data-ng-show="loginInProgress"></i> <input type="button" id="login-submit" value="Login"
+							ng-class="{'ok': loginForm.$valid}"
+							data-ng-click="login(user)"
+								>
+						<!--<div style="clear: both;"></div>-->
+					</div>
+				</form>
+				<hr/>
+				<div class="other-options">
+					<span onclick="CloseDialog('login-dialog'); LaunchDialog('signUp-dialog')">Need An Account ?</span>
+				</div>
+
+			</div>
+			<!-- and before it -->
+<!-- ////////////////////////////////////////////////////// -->
+			<div class="dialog-close-button" onClick="CloseDialog('login-dialog')">X</div>
+		</div>		
+	</div>
+</div>
+
+<style>
+	.login-container .other-options{
+		padding: 20px 0 0 20px;
+	}
+	.login-container .other-options span{
+		cursor: pointer;
+		text-decoration: underline;
+		color: #00B3CA;
+	}
+</style>
+
+
+

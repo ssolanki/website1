@@ -1,0 +1,39 @@
+{
+    "attractionsList": [{
+        "id": "26",
+        "attraction_name": "The Mahakal temple",
+        "attraction_places_id": "4",
+        "attraction_about": "The Mahakal temple atop the Observatory Hill is a most revered place for the locals and you will\r\n\r\nbe surprised to find a Hindu priest sharing a common altar with a Buddhist monk. Prayers are \r\n\r\nchanted by a hindu priest while a Buddhist monk reads from the Buddhist Holy Scriptures. Devotees \r\n\r\ncircumambulate the shrine three times, barefoot while ringing the bells that are placed around it. You \r\n\r\nwill see hundreds of prayer flags hung all over the shrine and on trees, fluttering in the bre",
+        "attraction_timeSpan": "",
+        "attraction_cost": "",
+        "attraction_image": "",
+        "attraction_postalCode": "",
+        "attraction_overall_rating": "0",
+        "$$hashKey": "object:188"
+    }],
+    "plan": {
+        "fullName": "s",
+        "email": "s@ff",
+        "mobileNumber": 9,
+        "numOfPeople": 2,
+        "address": {
+            "0": "s"
+        },
+        "numOfDays": "1-3",
+        "priceToPay": 300
+    },
+    "book": {
+        "travelPref": "travel pref 1",
+        "travelBy": "option1",
+        "hotels": "",
+        "travel": "travel pref 1, option1",
+        "amenities": ""
+    },
+    "startingDateDay": 29,
+    "startingDateMonth": "June",
+    "startingDateYear": 2015,
+    "planType": "Plan",
+    "selectedPlace": "Darjeeling, North East",
+    "journeyStartingDate": "June 29, 2015",
+    "selectedPlaceId": "4"
+}

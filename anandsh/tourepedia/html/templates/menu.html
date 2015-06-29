@@ -1,0 +1,80 @@
+<nav class="menu" id="menu" data-ng-controller="MenuLocationPlacesController">
+    <div class="menu-top-items ">
+        <div class="side-items left-side ">
+            <ul>
+                <li data-ng-hide="isLoggedIn"><button onclick="LaunchDialog('login-dialog')">Sign In</button></li>
+                <li data-ng-hide="isLoggedIn"><button onclick="LaunchDialog('signUp-dialog')">Register</button></li>
+                <li data-ng-show="isLoggedIn"><button data-ng-click="logout()">Logout</button></li>
+                <!--<li><a href="#">Plan Trip</a></li>-->
+                <li><a href="./blog">Blog</a></li>
+            </ul>
+        </div>
+        <div class="vertical-divider "> </div>
+        <div class="side-items right-side ">
+            <ul>
+                <li><a ui-sref="aboutUs">About Us</a></li>
+                <li><a ui-sref="samplePlan">Sample Plan</a></li>
+                <!--<li><button ><i class="fa fa-shopping-cart"></i></button></li>-->
+                <!--<li><button ><i class="fa fa-search"></i></button></li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="menu-logo">
+        <h1 ui-sref="home"><span>t</span>ourepedi<span>a</span></h1>
+        <p>you decide. we plan. we make it happen</p>
+    </div>
+    <div class="menu-locations" >
+        <ul>
+            <li>
+                <button>Himachal Pardesh</button>
+                <ul>
+                    <li data-ng-repeat="place in places | filter:{'place_region_name':'Himachal Pardesh'}">
+                        <a ui-sref="selectDestination"
+                           data-ng-click="updatePlaceInfo(place.id)">{{place.place_name}}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button>North East</button>
+                <ul>
+                    <li data-ng-repeat="place in places | filter:{'place_region_name':'North East'}">
+                        <a ui-sref="selectDestination"
+                           data-ng-click="updatePlaceInfo(place.id)">{{place.place_name}}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button>Rajasthan</button>
+                <ul>
+                    <li data-ng-repeat="place in places | filter:{'place_region_name':'Rajasthan'}">
+                        <a ui-sref="selectDestination"
+                           data-ng-click="updatePlaceInfo(place.id)">{{place.place_name}}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button>Uttrakhand</button>
+                <ul>
+                    <li data-ng-repeat="place in places | filter:{'place_region_name':'Uttrakhand'}:true" >
+                        <a ui-sref="selectDestination"
+                           data-ng-click="updatePlaceInfo(place.id)">{{place.place_name}}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <button>Others</button>
+                <ul>
+                    <li data-ng-repeat="place in places | filter:{'place_region_name':'Others'}:true" >
+                        <a ui-sref="selectDestination"
+                           data-ng-click="updatePlaceInfo(place.id)">{{place.place_name}}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>

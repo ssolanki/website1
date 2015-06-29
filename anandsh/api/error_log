@@ -1,0 +1,5 @@
+[29-Jun-2015 08:28:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/anandmpj/public_html/anandsh/api/slim.php:5
+Stack trace:
+#0 /home/anandmpj/public_html/anandsh/api/slim.php(5): PDO->__construct('mysql:dbname=to...', 'root', '')
+#1 {main}
+  thrown in /home/anandmpj/public_html/anandsh/api/slim.php on line 5
