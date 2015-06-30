@@ -1,6 +1,6 @@
 <?php
 require_once 'NotORM.php';
-$pdo = new PDO('mysql:dbname=tourepedia1;host=localhost', 'root', '');
+$pdo = new PDO('mysql:dbname=tourepedia;host=localhost', 'root', '');
 $db = new NotORM($pdo);
 require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
@@ -20,6 +20,7 @@ session_start();
 $app->post("/auth/process", function () use ($app, $db) {
 
     $array = (array) json_decode($app->request()->getBody());
+//    print_r($array);
     $email = $array['email'];
     $pwd = md5($array['pwd']);
     $user = $db->users()->where('user_email', $email)->where('user_password',$pwd);
@@ -57,7 +58,7 @@ $app->post("/register", function () use ($app, $db) {
                       'user_name'=> $array['fullName'] ,
                       'user_contact_no1' => $array['mobileNumber']
                      );
-
+//                     echo $array['mobileNumber'];
           $user = $db->users()->insert($p);
           $data = array( "registerStatus" => "successfully registered",
                   'userEmail' =>  $array['email']
@@ -122,46 +123,86 @@ $app->post('/tourepedia/submitPlan' ,function() use($app ,  $db){
 
     if($planType=='Book'){
 
-      $travelPref = $book['travelPref'];
-      $travelBy = $book['travelBy'];
+
+      $travelPref = $book['travelPref'];       $travelBy = $book['travelBy'];
       $fullName = $book['fullName'];
-      $email = $book['email'];
-      $aboutMeUs = $book['aboutMeUs'];
-      $moreAboutTrip = $book['moreAboutTrip'];
-      $hotelPref = $book['hotelPref'];
-      $amenitiesPref = $book['amenitiesPref'];
-      $originCity = $book['originCity'];
-      $returningCity = $book['returningCity'];
-      $typeOfTrip = $book['typeOfTrip'];
-      $tripDuration = $book['tripDuration'];
-      $numOfPeople = $book['numOfPeople'];
-      $expectedBudget = $book['expectedBudget'];
-      $mobileNumber = $book['mobileNumber'];
-      $altMobileNumber = $book['altMobileNumber'];
-      $hotels = $book['hotels'];
-      $travel = $book['travel'];
+      $aboutMeUs = $book['aboutMeUs'];         $moreAboutTrip = $book['moreAboutTrip'];
+      $hotelPref = $book['hotelPref'];         $amenitiesPref = $book['amenitiesPref'];
+      $originCity = $book['originCity'];       $returningCity = $book['returningCity'];
+      $typeOfTrip = $book['typeOfTrip'];       $tripDuration = $book['tripDuration'];
+      $numOfPeople = $book['numOfPeople'];     $expectedBudget = $book['expectedBudget'];
+      $mobileNumber = $book['mobileNumber'];   $altMobileNumber = $book['altMobileNumber'];
+      $hotels = $book['hotels'];               $travel = $book['travel'];
       $amenities = $book['amenities'];
+      $email = $book['email'];
+      $user_id = 0;
+       $q1 = $db->users()->where('user_email' , $email);
+      if(count($q1)==1)
+        $user_id = $q1->fetch()['id'];
 
-      $insert_trip = array( "user_name" => $fullName , "user_email" =>  $email, "user_id"=> 0 , "user_address"=> '' , "user_contact_no1"=> $mobileNumber,
-       "user_contact_no2"=>$altMobileNumber, "budget_per_person"=>0, "expect_total_budget"=>$expectedBudget, "trip_type" =>$typeOfTrip ,
-      "trip_starting_date"=> $journeyStartingDate, "no_of_days"=>$tripDuration, "origin_city"=>$originCity, "end_city"=>$returningCity, "returning_city"=>$returningCity,
-       "no_of_persons"=>$numOfPeople, "isOrderOk"=>0, "isOrderDone"=> 0);
-      $trip = $db->trips()->insert($insert_trip);
-      $trip_id =  $trip['id'];
+      $insert_trip = array( "places_id"=> $selectedPlaceId , "trip_place_name"=>$selectedPlace, "trip_booktype" => $planType ,
+      "trip_starting_date"=> $journeyStartingDate,  "user_name" => $fullName ,  "user_email" =>  $email, "users_id"=> $user_id ,
+       "user_address"=> '' , "user_contact_no1"=> $mobileNumber,  "user_contact_no2"=>$altMobileNumber,  "isOrderOk"=>0, "isOrderDone"=> 0);
+//       print_r($insert_trip);
+       $trip = $db->trips()->insert($insert_trip);
 
-        for ($i =0 ; $i< sizeOf($attractionsList) ;$i++) {
-          $p = (array)$attractionsList[$i];
-          $attraction = array(
-                "trips_id" => $trip_id,
-                "attractions_id" =>  $p['id'],
-                "attraction_preference" => 0
-          );
+       $trip_id =  $trip['id'];
+//       echo $trip_id ;
+      $insert_trip_book = array(
+        "trips_id" => $trip_id , "no_of_persons"=>$numOfPeople , "expect_total_budget"=>$expectedBudget, "trip_type" =>$typeOfTrip ,
+          "no_of_days"=>$tripDuration, "origin_city"=>$originCity, "end_city"=>$returningCity, "returning_city"=>$returningCity ,
+          "hotels" => $hotels , "travel"=> $travel , "amenities" => $amenities
+        );
+
+      $trip = $db->trips_book()->insert($insert_trip_book);
+
+      for ($i =0 ; $i< sizeOf($attractionsList) ;$i++) {
+        $p = (array)$attractionsList[$i];
+        $attraction = array(
+              "trips_id" => $trip_id,
+              "attractions_id" =>  $p['id'],
+              "attraction_preference" => 0
+        );
         $db->trip_attractions()->insert($attraction);
         }
 
     }
     else{
+      $fullName = $plan['fullName'];          $mobileNumber = $plan['mobileNumber'];
+      $altMobileNumber = $mobileNumber;       $tripDuration =   $plan['numOfDays'];
+      $priceToPay = $plan['priceToPay'];      $numOfPeople = $plan['numOfPeople'];
+      $address = (array)$plan['address'];
 
+      $email = $plan['email'];
+      $user_id = 0;
+       $q1 = $db->users()->where('user_email' , $email);
+      if(count($q1)==1)
+        $user_id = $q1->fetch()['id'];
+
+      $insert_trip = array( "places_id"=> $selectedPlaceId , "trip_place_name"=>$selectedPlace, "trip_booktype" => $planType ,
+      "trip_starting_date"=> $journeyStartingDate,  "user_name" => $fullName ,  "user_email" =>  $email, "users_id"=> $user_id ,
+       "user_address"=> $address , "user_contact_no1"=> $mobileNumber,  "user_contact_no2"=>$altMobileNumber,  "isOrderOk"=>0, "isOrderDone"=> 0);
+  //       print_r($insert_trip);
+       $trip = $db->trips()->insert($insert_trip);
+
+       $trip_id =  $trip['id'];
+  //       echo $trip_id ;
+      $insert_trip_plan = array(
+        "trips_id" => $trip_id , "no_of_persons"=>$numOfPeople ,
+          "no_of_days"=>$tripDuration , "price_to_pay" => $priceToPay
+        );
+
+      $trip_plan = $db->trips_plan()->insert($insert_trip_plan);
+
+      for ($i =0 ; $i< sizeOf($attractionsList) ;$i++) {
+        $p = (array)$attractionsList[$i];
+        $attraction = array(
+              "trips_id" => $trip_id,
+              "attractions_id" =>  $p['id'],
+              "attraction_preference" => 0
+        );
+        $db->trip_attractions()->insert($attraction);
+        }
     }
     $app->response()->header('content-type','application/json');
     echo json_encode(array('order_id'=>$data));
@@ -370,25 +411,9 @@ $app->get('/attractions(/:name)', function($name=null) use ($app, $db){
         }
 
     }
-
-
-
     $app->response()->header('content-type','application/json');
-
-
-
     echo json_encode(array('attractions_data'=>$data));
-
 });
-
-
-
-
-
-
-
-
-
 $app->run();
 
 ?>

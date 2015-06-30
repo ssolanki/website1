@@ -32,6 +32,7 @@ app.factory('LoginSignUpService', ['$http', 'SessionService', function ($http, S
                 email: user.email,
                 pwd: user.password
             };
+//            console.log(user);
             return $http.post('api/slim.php/auth/process', data);
         },
         logout: function () {

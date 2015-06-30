@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c033cd1-c884-4668-89a8-ab39d4ae96c2" name="Default" comment="" />
+    <list default="true" id="1c033cd1-c884-4668-89a8-ab39d4ae96c2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/Chamba_Himachal_Pradesh.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/Taj free to use commercially.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/Tawang Monastery.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/family_travel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/group_travel.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/highway.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/honeymoon_package.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_annandale_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_chail_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_christ_church_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_haritage_museum_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_himalaya_nature_park_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_iias_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_jhaku_temple_img1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_kufri_fun_world_img1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_ridge_img1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_summer_hill_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/attractions/Shimla/shimla_tara_dev_temple_img1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/solan.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/images/home/tulip garden kashmir.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/html/templates/plan-costs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/html/views/privacy-policies.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tourepedia/html/views/terms-and-conditions.html" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\accountInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\core\database\connect.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\core\functions\general.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\core\functions\user.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\core\init.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\forgotPassword.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\is_logged_in.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\login.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\logout.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\myTrips.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\register.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\resetPassword.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\api\submitThePlan.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\tourepedia\html\views\submit-plan.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\xampp\htdocs\tour\tourepedia\images\testimonials\shimla.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/about-us.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/about-us.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/add-attractions.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/add-attractions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/assets/javascript/app.js" afterPath="$PROJECT_DIR$/blog/assets/javascript/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/javascript/app.js" afterPath="$PROJECT_DIR$/tourepedia/javascript/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/attractions.sql" afterPath="$PROJECT_DIR$/db/attractions.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/javascript/controllers.js" afterPath="$PROJECT_DIR$/tourepedia/javascript/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/css/custom.css" afterPath="$PROJECT_DIR$/tourepedia/css/custom.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/templates/footer.html" afterPath="$PROJECT_DIR$/tourepedia/html/templates/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/global.css" afterPath="$PROJECT_DIR$/assets/css/global.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/home.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/templates/login.html" afterPath="$PROJECT_DIR$/tourepedia/html/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/templates/menu.html" afterPath="$PROJECT_DIR$/tourepedia/html/templates/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/html/templates/move-top.html" afterPath="$PROJECT_DIR$/assets/html/templates/move-top.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/personal-information.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/personal-information.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/plan-a-trip.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/plan-a-trip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/javascript/sample.js" afterPath="$PROJECT_DIR$/tourepedia/javascript/sample.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/select-destination.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/select-destination.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/javascript/services.js" afterPath="$PROJECT_DIR$/tourepedia/javascript/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/templates/signup.html" afterPath="$PROJECT_DIR$/tourepedia/html/templates/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/slim.php" afterPath="$PROJECT_DIR$/api/slim.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/testimonials.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/testimonials.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/tourepedia1_new.sql" afterPath="$PROJECT_DIR$/db/tourepedia1_new.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/view-and-pay.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/view-and-pay.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tourepedia/html/views/view-and-submit.html" afterPath="$PROJECT_DIR$/tourepedia/html/views/view-and-submit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="tour.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,68 +88,146 @@
     <favorites_list name="tour" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.32024977">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.27929688" vertical-offset="146" max-vertical-offset="799">
-                  <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="18" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/menu.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.961538" vertical-offset="277" max-vertical-offset="952">
-                  <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tourepedia/css/custom.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.82156134" vertical-offset="289" max-vertical-offset="2346">
-                  <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tourepedia/javascript/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="5627">
+              <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="terms-and-conditions.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tourepedia/html/views/terms-and-conditions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="102">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="privacy-policies.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tourepedia/html/views/privacy-policies.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8380282" vertical-offset="1955" max-vertical-offset="3043">
+              <caret line="143" column="22" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tourepedia/javascript/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="2839">
+              <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1054">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select-destination.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tourepedia/html/views/select-destination.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="918">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tourepedia/html/views/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="442">
+              <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1445">
+              <caret line="30" column="84" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/footer.html" />
-        <option value="$PROJECT_DIR$/templates/menu.html" />
-        <option value="$PROJECT_DIR$/blog/assets/javascript/controllers.js" />
-        <option value="$PROJECT_DIR$/blog/assets/javascript/services.js" />
-        <option value="$PROJECT_DIR$/tourepedia/javascript/controllers.js" />
-        <option value="$PROJECT_DIR$/tourepedia/javascript/services.js" />
-        <option value="$PROJECT_DIR$/tourepedia/javascript/custom.js" />
-        <option value="$PROJECT_DIR$/tourepedia/html/templates/home.html" />
-        <option value="$PROJECT_DIR$/blog/assets/javascript/app.js" />
-        <option value="$PROJECT_DIR$/tourepedia/html/templates/footer.html" />
-        <option value="$PROJECT_DIR$/tourepedia/html/views/place-info.html" />
-        <option value="$PROJECT_DIR$/tourepedia/html/views/fix-plans.html" />
-        <option value="$PROJECT_DIR$/tourepedia/javascript/app.js" />
-        <option value="$PROJECT_DIR$/tourepedia/html/views/testimonials.html" />
+        <option value="$PROJECT_DIR$/blog/assets/html/blogs/College-trip.html" />
+        <option value="$PROJECT_DIR$/assets/css/layout.css" />
+        <option value="$PROJECT_DIR$/blog/assets/javascript/custom.js" />
         <option value="$PROJECT_DIR$/blog/index.html" />
+        <option value="$PROJECT_DIR$/blog/assets/javascript/app.js" />
+        <option value="$PROJECT_DIR$/blog/assets/javascript/services.js" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/test.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/place-info.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/place-serach-box.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/place-search-box.html" />
+        <option value="$PROJECT_DIR$/blog/assets/html/templates/menu.html" />
+        <option value="$PROJECT_DIR$/blog/assets/html/templates/footer.html" />
+        <option value="$PROJECT_DIR$/blog/assets/html/views/aside.html" />
+        <option value="$PROJECT_DIR$/blog/assets/html/views/comments.html" />
+        <option value="$PROJECT_DIR$/blog/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/../html/calendar/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/sample-plan.html" />
+        <option value="$PROJECT_DIR$/assets/html/templates/login.html" />
+        <option value="$PROJECT_DIR$/assets/html/templates/signup.html" />
+        <option value="$PROJECT_DIR$/assets/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/tourepedia/javascript/custom.js" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/plan-signup.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/submit-plan.html" />
+        <option value="$PROJECT_DIR$/assets/javascript/global.js" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/fix-plans.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/shimla_attraction_1.html" />
+        <option value="$PROJECT_DIR$/assets/html/templates/move-top.html" />
+        <option value="$PROJECT_DIR$/tourepedia/javascript/sample.js" />
+        <option value="$PROJECT_DIR$/api/slim.php" />
+        <option value="$PROJECT_DIR$/tourepedia/html/templates/signup.html" />
         <option value="$PROJECT_DIR$/tourepedia/html/templates/menu.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/add-attractions.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/templates/show-plan-costs.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/testimonials.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/plan-a-trip.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/templates/plan-costs.html" />
+        <option value="$PROJECT_DIR$/assets/css/global.css" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/personal-information.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/view-and-submit.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/view-and-pay.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/templates/login.html" />
+        <option value="$PROJECT_DIR$/tourepedia/javascript/services.js" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/home.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/select-destination.html" />
+        <option value="$PROJECT_DIR$/tourepedia/javascript/controllers.js" />
         <option value="$PROJECT_DIR$/tourepedia/css/custom.css" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/about-us.html" />
+        <option value="$PROJECT_DIR$/tourepedia/html/templates/footer.html" />
+        <option value="$PROJECT_DIR$/tourepedia/javascript/app.js" />
+        <option value="$PROJECT_DIR$/tourepedia/html/views/privacy-policies.html" />
       </list>
     </option>
   </component>
@@ -92,11 +235,12 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="10" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -150,6 +294,28 @@
               <option name="myItemId" value="tourepedia" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tour" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tourepedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -166,6 +332,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -201,7 +371,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
+              <option name="myItemId" value="tourepedia" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -211,15 +385,29 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="FullScreen" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.File Status" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tour\tourepedia\images\home" />
+      <recent name="C:\xampp\htdocs\tour\tourepedia\html\views" />
+      <recent name="C:\xampp\htdocs\tour\assets\javascript" />
+      <recent name="C:\xampp\htdocs\tour\assets\css" />
+      <recent name="C:\xampp\htdocs\tour\tourepedia\html\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\tour\tourepedia\html\templates" />
+      <recent name="C:\xampp\htdocs\tour\assets\html\templates" />
       <recent name="C:\xampp\htdocs\tour\tourepedia\html\views" />
       <recent name="C:\xampp\htdocs\tour\assets\css" />
       <recent name="C:\xampp\htdocs\tour\assets" />
@@ -276,30 +464,50 @@
       <option name="number" value="Default" />
       <updated>1434471766890</updated>
     </task>
+    <task id="LOCAL-00001" summary="notification added for adding or removing attraction items">
+      <created>1434912078714</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1434912078714</updated>
+    </task>
+    <task id="LOCAL-00002" summary="about full cycle set for trip planning&#10;">
+      <created>1434926920515</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1434926920515</updated>
+    </task>
+    <task id="LOCAL-00003" summary="preview plan added&#10;">
+      <created>1435208961032</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1435208961032</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="10" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15714286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298791" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -317,185 +525,408 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="notification added for adding or removing attraction items" />
+    <MESSAGE value="about full cycle set for trip planning&#10;" />
+    <MESSAGE value="preview plan added&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="preview plan added&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/sample-plan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="748">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/place-info.html">
+    <entry file="file://$PROJECT_DIR$/assets/html/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="442">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding />
+        <state vertical-scroll-proportion="1.5219047" vertical-offset="0" max-vertical-offset="969">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/assets/html/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="935">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../tp/js/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0490018" vertical-offset="578" max-vertical-offset="2618">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15426497" vertical-offset="0" max-vertical-offset="551">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/assets/html/blogs/College-trip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="1819" max-vertical-offset="2805">
-          <caret line="117" column="48" selection-start-line="117" selection-start-column="48" selection-end-line="117" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/assets/javascript/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43194193" vertical-offset="0" max-vertical-offset="1581">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/assets/javascript/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.21597096" vertical-offset="119" max-vertical-offset="1309">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/assets/javascript/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043557167" vertical-offset="894" max-vertical-offset="1564">
-          <caret line="54" column="86" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4522">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/assets/javascript/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.6787659" vertical-offset="51" max-vertical-offset="1547">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40108892" vertical-offset="0" max-vertical-offset="629">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascript/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19604613" vertical-offset="68" max-vertical-offset="1173">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/html/templates/model.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05851979" vertical-offset="0" max-vertical-offset="581">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/javascript/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <caret line="0" column="1023" selection-start-line="0" selection-start-column="1023" selection-end-line="0" selection-end-column="1023" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/footer.html">
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5466667" vertical-offset="529" max-vertical-offset="1054">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state vertical-scroll-proportion="-0.60714287" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="13647" selection-start-line="1" selection-start-column="13607" selection-end-line="1" selection-end-column="13647" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/index.html">
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/shimla_attraction_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5644531" vertical-offset="272" max-vertical-offset="1003">
-          <caret line="33" column="125" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="125" />
+        <state vertical-scroll-proportion="0.5655577" vertical-offset="0" max-vertical-offset="1411">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/html/templates/move-top.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="170">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Slim/Middleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Slim/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7174">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Slim/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2142857" vertical-offset="0" max-vertical-offset="4097">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Slim/LogWriter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1302682" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Slim/Log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0651341" vertical-offset="0" max-vertical-offset="4131">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Slim/Environment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.066797644" vertical-offset="0" max-vertical-offset="4131">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/Slim/Slim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33202356" vertical-offset="16848" max-vertical-offset="22355">
+          <caret line="1001" column="29" selection-start-line="1001" selection-start-column="28" selection-end-line="1001" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/sample_controller">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="3349">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/sample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1054" max-vertical-offset="3298">
+          <caret line="80" column="69" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/app.js">
+    <entry file="file://$PROJECT_DIR$/api/slim.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2527881" vertical-offset="0" max-vertical-offset="731">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="2.1482701" vertical-offset="1773" max-vertical-offset="6528">
+          <caret line="181" column="12" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/testimonials.html">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1328125" vertical-offset="0" max-vertical-offset="833">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="1963" max-vertical-offset="8721">
+          <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/plan-signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6109155" vertical-offset="486" max-vertical-offset="1054">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/add-attractions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6584507" vertical-offset="0" max-vertical-offset="1122">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/assets/html/views/uploadBlog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5" vertical-offset="408" max-vertical-offset="1224">
+          <caret line="37" column="138" selection-start-line="37" selection-start-column="112" selection-end-line="37" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11971831" vertical-offset="0" max-vertical-offset="918">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tourepedia/html/views/fix-plans.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29882812" vertical-offset="0" max-vertical-offset="1020">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.089788735" vertical-offset="0" max-vertical-offset="1071">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.410774" vertical-offset="3808" max-vertical-offset="6868">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33278418" vertical-offset="1617" max-vertical-offset="3349">
+          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/plan-costs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.153847" vertical-offset="0" max-vertical-offset="1003">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="1054" max-vertical-offset="1904">
+          <caret line="74" column="57" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/place-info.html">
+    <entry file="file://$PROJECT_DIR$/assets/css/global.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73046875" vertical-offset="0" max-vertical-offset="512">
-          <caret line="22" column="64" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.5707071" vertical-offset="8790" max-vertical-offset="23613">
+          <caret line="537" column="22" selection-start-line="537" selection-start-column="22" selection-end-line="537" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/personal-information.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="124.23077" vertical-offset="3502" max-vertical-offset="6562">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/view-and-submit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2975">
+          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1292">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/plan-a-trip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="544">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/testimonials.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="935">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.615385" vertical-offset="452" max-vertical-offset="1207">
+          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/view-and-pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="629" max-vertical-offset="2380">
+          <caret line="60" column="116" selection-start-line="60" selection-start-column="116" selection-end-line="60" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="442">
+          <caret line="1" column="95" selection-start-line="1" selection-start-column="95" selection-end-line="1" selection-end-column="95" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.961538" vertical-offset="277" max-vertical-offset="952">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="306" max-vertical-offset="1445">
+          <caret line="30" column="84" selection-start-line="30" selection-start-column="67" selection-end-line="30" selection-end-column="84" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/select-destination.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27929688" vertical-offset="146" max-vertical-offset="799">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="18" selection-end-column="36" />
+        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="918">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/terms-and-conditions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="607">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/templates/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="2839">
+          <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tourepedia/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82156134" vertical-offset="289" max-vertical-offset="2346">
-          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.523888" vertical-offset="4799" max-vertical-offset="26554">
+          <caret line="301" column="21" selection-start-line="301" selection-start-column="21" selection-end-line="301" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/about-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7605634" vertical-offset="520" max-vertical-offset="1207">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/javascript/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="307" max-vertical-offset="5627">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tourepedia/html/views/privacy-policies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8380282" vertical-offset="1955" max-vertical-offset="3043">
+          <caret line="143" column="22" selection-start-line="143" selection-start-column="22" selection-end-line="143" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

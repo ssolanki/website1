@@ -1,0 +1,67 @@
+<style>
+	.upload-blog-container{
+		margin: 0px auto;
+		background: lightblue;
+	}
+	.upload-blog-container .tags{
+		list-style: none;
+	}
+	.upload-blog-container .tags .tag{
+		display: inline-block;
+		background: gray;
+		padding: 2px 3px;
+		margin: 2px;
+	}
+</style>
+<div class="upload-blog-container" data-ng-controller="UploadBlogCtrl">
+	<h2>Blog Upload Portal For Tourepedia</h2>
+	<form>
+		<table>
+			<tr>
+				<td><label for="title">Title</label> </td>
+				<td>:</td>
+				<td><input type="text" id="title" name="title" ng-model="blog.title"></td>
+			</tr>
+			<tr>
+				<td><label for="info" >Summery</label></td>
+				<td>:</td>
+				<td><input type="text" id="info" name="info" ng-model="blog.info"></td>
+			</tr>
+			<tr>
+				<td><label for="blogId" >Blog ID</label></td>
+				<td>:</td>
+				<td><input type="text" id="blogId" name='blogId' ng-model="blog.id"></td>
+			</tr>
+			<tr>
+				<td><label for="">Tags</label></td>
+				<td>:</td>
+				<td><select ng-model="newTag" name="newTag"  ng-options="tag for tag in allTags | orderBy: tag" ng-change='AddTag(newTag)'>
+		</select></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<ul class="tags">
+						<li data-ng-repeat="tag in currTags" class="tag">
+							{{tag}} <button ng-click="RemoveTag(tag)" type="button">X</button>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>.html file</td>
+				<td>:</td>
+				<td><input type="file" file-model="blogFile"/></td>
+			</tr>
+			<tr>
+				<td>.jpg Image file</td>
+				<td>:</td>
+				<td><input type="file" file-model="imageFile"/></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td style="text-align: right"><input type="Submit" value="Upload" ng-click="UploadBlog(blog)"></td>
+			</tr>
+		</table>
+	</form>
+</div>

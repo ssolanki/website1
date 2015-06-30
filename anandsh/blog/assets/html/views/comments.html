@@ -1,0 +1,39 @@
+<div class="comment-view" data-ng-controller="CommentsCtrl">
+	<div class="new-comment" data-ng-init="newComment.username = 'Annoymous'">
+		<textarea type="text" name="comment" placeholder="Post Your Comment" ng-model="newComment.comment"></textarea>
+		<div class="posting-options">
+			<button type="button" data-ng-click="addNewComment(newComment)">As Anonymous</button> <!-- <button type="button">Sign in with facebook</button> -->
+		</div>
+	</div>
+	<div class="past-comments ">
+		<div class="comment" data-ng-show="newComment.comment != undefined && newComment.comment != ''">
+			<div class="comment-container">
+				<div class="image-container">
+					
+				</div>
+				<div class="comment-body">
+					<div class="username">{{newComment.username}}</div>
+					<div class="comment-data">{{newComment.comment}}</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="comment" data-ng-repeat="comment in comments">
+			<div class="comment-container">
+				<div class="image-container">
+					
+				</div>
+				<div class="comment-body">
+					<div class="username">{{comment.username}}</div>
+					<div class="comment-data">{{comment.comment}}</div>
+				</div>
+			</div>
+			<!-- <div class="other-options">
+				<button type="button"><i class="fa fa-thumbs-up fa-2x"></i></button>
+				<button type="button"><i class="fa fa-thumbs-down fa-2x"></i></button>
+				<button type="button"><i class="fa fa-share fa-2x"></i></button>
+			</div> -->
+		</div>
+	</div>
+</div>

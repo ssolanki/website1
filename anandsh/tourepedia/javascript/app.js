@@ -96,6 +96,20 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
                 }
             }
         })
+        .state('privacyPolicies',{
+            url: '/privacy-policies',
+            views:{
+                'place-info':{
+                    templateUrl: './tourepedia/html/views/privacy-policies.html'
+                },
+                'fix-plans':{
+                    templateUrl:'./tourepedia/html/views/fix-plans.html'
+                },
+                'testimonials':{
+                    templateUrl:'./tourepedia/html/views/testimonials.html'
+                }
+            }
+        })
 }]);
 
 

@@ -28,6 +28,14 @@ app.controller("MenuLocationPlacesController", ["$scope", "PlacesService", "$roo
 app.controller("PlaceInfoController", ['$scope', '$rootScope', '$location', 'SessionService', 'PlacesService',
     function (scope, rootScope, location, SessionService, PlacesService) {
         scope.selectedPlaceInfo = {};
+        scope.images = {
+            "Himachal Pradesh" : "Chamba_Himachal_Pradesh.jpg",
+            "North East" : "solan.jpg",
+            "Rajasthan" : "Tawang Monastery.jpg",
+            "Uttrakhand"  : "tulip garden kashmir.jpg",
+            "Others" : "home_back.jpg"
+        };
+
         scope.isPlaceSelected = rootScope.selectedPlaceInfo != undefined;
         rootScope.$watch('selectedPlaceInfo', function (newValue) {
             scope.selectedPlaceInfo = newValue;
@@ -36,6 +44,8 @@ app.controller("PlaceInfoController", ['$scope', '$rootScope', '$location', 'Ses
                 SessionService.set('selectedPlaceId', newValue.id);
             }
         });
+
+
         scope.processToAddAttraction = function () {
             SessionService.set('userProceedToAddAttraction', true);
         };
@@ -49,13 +59,16 @@ app.controller("PlaceInfoController", ['$scope', '$rootScope', '$location', 'Ses
                     scope.selectedPlaceInfo = resp.data.places_data[0];
             });
         }
+        console.log(scope.selectedPlaceInfo);
+        console.log(scope.images[scope.selectedPlaceInfo.place_region_name]);
     }]);
 
-app.controller("TripPlanningController", ['$scope', '$location', 'AttractionService', 'PlacesService', 'SessionService','$rootScope','$http',
+app.controller("TripPlanningController", ['$scope', '$location', 'AttractionService', 'PlacesService', 'SessionService','$rootScope', '$http',
     function (scope, location, AttractionService, PlacesService, SessionService, rootScope,$http) {
 
         // this controller takes care of selecting attractions, taking user's personal information
         // and submitting tha plan
+
         scope.user = {};
         scope.user.attractionsList = [];
         scope.user.plan = {};
@@ -152,51 +165,53 @@ app.controller("TripPlanningController", ['$scope', '$location', 'AttractionServ
 
         // user is asking to submit the plan
         scope.proceedToSubmitThePlan = function (userPersonalInfo) {
-            scope.userAtAddAttraction = false;
-            scope.userAtAddInformation = false;
-            scope.userAtSubmitPlan = true;
-            if(scope.user.book != undefined) {
-                var tmp = [];
-                if (userPersonalInfo.hotelPref != undefined) {
-                    for (var i = 0; i < hotelTypes.length; i++) {
-                        if (userPersonalInfo.hotelPref[i] != undefined && userPersonalInfo.hotelPref.i != false) {
-                            tmp.push(hotelTypes[i]);
-                        }
-                    }
-                }
-                scope.user.book.hotels = tmp.toString();
-                tmp = [];
-                if (userPersonalInfo.amenitiesPref != undefined) {
-                    for (i = 0; i < amenities.length; i++) {
-                        if (userPersonalInfo.amenitiesPref[i] != undefined && userPersonalInfo.amenitiesPref.i != false) {
-                            tmp.push(amenities[i]);
-                        }
-                    }
-                }
-                if(scope.user.book.travelPref != 'No Preference'){
-                    scope.user.book.travel = scope.user.book.travelPref+", "+ scope.user.book.travelBy;
-                }else{
-                    scope.user.book.travel = 'No Preference';
-                }
-                scope.user.book.amenities = tmp.toString();
-            }
-            scope.user.selectedPlace = scope.selectedPlaceInfo.place_name +", "+ scope.selectedPlaceInfo.place_region_name;
-            scope.user.journeyStartingDate =scope.user.startingDateMonth+" "+scope.user.startingDateDay+", "+scope.user.startingDateYear;
-            scope.user.selectedPlaceId = scope.selectedPlaceInfo.id;
+          if(1){
+          // if($("#PersonalInfoForm").hasClass('valid-form')){
+              scope.userAtAddAttraction = false;
+              scope.userAtAddInformation = false;
+              scope.userAtSubmitPlan = true;
 
-            console.log(JSON.stringify(scope.user));
-            $http.post('../anandsh/api/slim.php/tourepedia/submitPlan',scope.user).
-                 success(function(data, status) {
-                   console.log(data);
-            });
-
-            SessionService.set('user', (scope.user));
+              if(scope.user.book != undefined) {
+                  var tmp = [];
+                  if (userPersonalInfo.hotelPref != undefined) {
+                      for (var i = 0; i < hotelTypes.length; i++) {
+                          if (userPersonalInfo.hotelPref[i] != undefined && userPersonalInfo.hotelPref.i != false) {
+                              tmp.push(hotelTypes[i]);
+                          }
+                      }
+                  }
+                  scope.user.book.hotels = tmp.toString();
+                  tmp = [];
+                  if (userPersonalInfo.amenitiesPref != undefined) {
+                      for (i = 0; i < amenities.length; i++) {
+                          if (userPersonalInfo.amenitiesPref[i] != undefined && userPersonalInfo.amenitiesPref.i != false) {
+                              tmp.push(amenities[i]);
+                          }
+                      }
+                  }
+                  if(scope.user.book.travelPref != 'No Preference'){
+                      scope.user.book.travel = scope.user.book.travelPref+", "+ scope.user.book.travelBy;
+                  }else{
+                      scope.user.book.travel = 'No Preference';
+                  }
+                  scope.user.book.amenities = tmp.toString();
+              }
+              scope.user.selectedPlace = scope.selectedPlaceInfo.place_name +", "+ scope.selectedPlaceInfo.place_region_name;
+              scope.user.journeyStartingDate =scope.user.startingDateMonth+" "+scope.user.startingDateDay+", "+scope.user.startingDateYear;
+              scope.user.selectedPlaceId = scope.selectedPlaceInfo.id;
+              console.log(scope.user);
+              SessionService.set('user', JSON.stringify(scope.user));
+          }
         };
 
 
         scope.submitThePlan = function () {
             showNotification("Plan successfully submitted.", "rgb(26, 188, 156)", 4);
-
+//            console.log((SessionService.get('user')));
+            $http.post('../site/api/slim.php/tourepedia/submitPlan',SessionService.get('user')).
+                 success(function(data, status) {
+                   console.log(data);
+            });
             // SessionService.destroy('selectedPlaceId');
             // SessionService.destroy('userProceedToAddAttraction');
             // SessionService.destroy('user');
@@ -221,6 +236,44 @@ app.controller("TripPlanningController", ['$scope', '$location', 'AttractionServ
 
     }]);
 
+app.controller('HomeViewController', ['$scope','$interval', function(scope, interval){
+    scope.firstTime = true;
+    var imagesName = ['Chamba_Himachal_Pradesh.jpg',
+        'highway.jpg',
+        'home_back.jpg',
+        'solan.jpg',
+        'Taj free to use commercially.jpg',
+        'Tawang Monastery.jpg',
+        'tulip garden kashmir.jpg'
+    ];
+    var i = 0;
+    var numOfImages = imagesName.length;
+    scope.image1 = imagesName[i];
+    i++;
+    scope.image2 = imagesName[i];
+    interval(UpdateImage, 5000);
+
+    var updatingImage1 = true;
+
+    function UpdateImage(){
+        scope.firstTime = false;
+
+        /*
+        * we will alter the update of images for both image1 and image2
+        * like first update image1, then image2, then image 1, then image 2...*/
+
+        i++;
+        if(i >= numOfImages){i=0;}
+        if(updatingImage1)
+            scope.image1 = imagesName[i];
+        else
+            scope.image2 = imagesName[i];
+        updatingImage1 = !updatingImage1;
+        console.log("updating with i : "+ i);
+    }
+
+}]);
+
 app.controller('SignUpController', ['$scope', 'LoginSignUpService','$rootScope','SessionService',
     function ($scope, SignUpService, rootScope, SessionService) {
 
@@ -241,7 +294,6 @@ app.controller('SignUpController', ['$scope', 'LoginSignUpService','$rootScope',
             $promise.then( function(resp){
                 signUpInProgress = false;
                 var data = resp.data;
-console.log('sssssssssss');
                 console.log(data);
                 if(data.registerStatus == "already registered"){
                     showNotification('Email already exists. Please choose a different email address to signup.', "red", "5");

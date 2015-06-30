@@ -1,0 +1,80 @@
+<aside class="side-bar" data-ng-controller="SideBarCtrl">
+	<div class="follow-us-container">
+		<div class="heading">Follow Us</div>
+		<div class="follow-us-links">	
+			<a href="https://www.facebook.com/tourepedia1" target="_blank" title="Facebook"> <i class="fa fa-facebook fa-2x" ></i></a>
+			<a href="https://twitter.com/tourepedia" target="_blank" title="Twitter"><i class="fa fa-twitter fa-2x"></i></a>
+			<a href="https://plus.google.com/117918143779041600948" target="_blank" title="Google +"><i class="fa fa-google-plus fa-2x"></i></a>
+		</div>
+	</div>
+	<div class="trending-container">
+		<div class="heading">You may like</div>
+
+		<div class="post-info" data-ng-repeat="blog in relatedBlogsData " ui-sref="blogs({'blogId': blog.id})">
+				<div class="sort-image"><img data-ng-src="./assets/images/aside/{{blog.id}}.jpg" alt="Image"></div>
+				<div class="info">{{blog.title}}</div>
+		</div>
+	</div>
+
+	<!-- <div class="subheading-container">
+		<div class="heading">Sub head1</div>
+	</div>	 -->
+</aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <aside class="side-bar" data-ng-controller="SideBarCtrl">
+	<input type="text" data-ng-model="search">
+	<h3 ng-show="relatedPosts.length != 0">You may also like</h3>
+	<ul class="related-post-container">
+		<li  data-ng-repeat="post in relatedPosts | filter:search" >
+			<a ui-sref="posts({postId: post.id})">
+				<h3>{{post.title}}</h3>
+				<p>{{post.info}}</p>	
+			</a>
+		</li>
+	</ul>
+	<h3>Popular now a days</h3>
+	<ul class="default-post-container">
+		<li  data-ng-repeat="post in postOfTheDay | filter:search" >
+			<a ui-sref="posts({postId: post.id})">
+				<h3>{{post.title}}</h3>
+				<p>{{post.info}}</p>	
+			</a>
+		</li>
+	</ul>
+</aside> -->
+
